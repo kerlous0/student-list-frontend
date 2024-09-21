@@ -23,9 +23,9 @@ function StudentTable({ students }: Props) {
     return students.map((item) => {
       let result = false;
       console.log(students);
-      for (let i = 0; i <= 1000; i++) {
-        result = Math.random() > 0.5;
-      }
+      // for (let i = 0; i <= 1000; i++) {
+      result = Math.random() > 0.5;
+      // }
       return { ...item, scholarship: result };
     });
   }, [students]);
